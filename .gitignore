@@ -1,0 +1,39 @@
+# Node dependencies
+node_modules/
+
+# WhatsApp Web Session & Cache (Authentication tokens & session data)
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Sensitive Data & Local Configurations (DO NOT COMMIT)
+recipients.json
+test-recipients.json
+message.txt
+*.local.json
+.env
+.env.*
+
+# Media / Images / Event Flyers (Local assets)
+cover.jpg
+cover.jpeg
+cover.png
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+!*.example.*
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

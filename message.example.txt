@@ -1,0 +1,9 @@
+Hi {name} 👋,
+
+This is a reminder for our upcoming event *Sample Event 2026*!
+
+📅 *Date:* Saturday, 15th November 2026
+⏰ *Time:* 10:00 AM – 2:00 PM
+📍 *Venue:* Main Hall
+
+We look forward to seeing you there! 🙌

@@ -1,0 +1,26 @@
+{
+  "name": "whatsapp-msg",
+  "version": "1.0.0",
+  "description": "Automated WhatsApp bulk message sender with personalized templates, image attachments, and anti-ban delays",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "send": "node index.js",
+    "test": "node index.js --test",
+    "send:test": "node index.js --test"
+  },
+  "keywords": [
+    "whatsapp",
+    "whatsapp-web",
+    "bulk-sender",
+    "automation",
+    "messaging"
+  ],
+  "author": "Simon Emmanuel",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.34.7"
+  }
+}
