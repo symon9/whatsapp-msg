@@ -51,6 +51,7 @@ cp recipients.example.json recipients.json
   { "name": "John Smith", "number": "12345678902" }
 ]
 ```
+
 > **Note:** Numbers should include the international country code without spaces or the `+` sign (e.g. `2348012345678`).
 
 ### 2. Test Recipients List
@@ -89,7 +90,8 @@ This is a reminder for our upcoming event *Sample Event 2026*!
 We look forward to seeing you there! 🙌
 ```
 
-#### Template Variables:
+#### Template Variables
+
 - `{name}` or `{firstName}`: Recipient's first name (falls back to `'there'`).
 - `{fullName}`: Recipient's full name.
 
@@ -108,7 +110,9 @@ Always test with your own number first:
 ```bash
 npm run test
 ```
+
 *Or:*
+
 ```bash
 node index.js --test
 ```
@@ -120,7 +124,9 @@ Send messages to all recipients in `recipients.json`:
 ```bash
 npm run send
 ```
+
 *Or:*
+
 ```bash
 npm start
 ```
@@ -130,7 +136,7 @@ npm start
 You can override default files and settings via CLI arguments:
 
 | Option | Description |
-|---|---|
+| --- | --- |
 | `--test` | Runs against `test-recipients.json` |
 | `--recipients <path>` | Specify a custom JSON recipients file |
 | `--message-file <path>` | Specify a custom message template text file |
@@ -139,6 +145,7 @@ You can override default files and settings via CLI arguments:
 | `--no-image` | Disable image attachment even if `cover.jpg` exists |
 
 **Example:**
+
 ```bash
 node index.js --recipients ./vip-list.json --image ./flyer.png --message-file ./custom-msg.txt
 ```
@@ -157,6 +164,7 @@ node index.js --recipients ./vip-list.json --image ./flyer.png --message-file ./
 ## Security & Privacy
 
 The `.gitignore` is pre-configured to strictly protect your privacy:
+
 - 🔒 **WhatsApp Session Credentials** (`.wwebjs_auth/`, `.wwebjs_cache/`) are ignored.
 - 🔒 **Recipient phone numbers and names** (`recipients.json`, `test-recipients.json`) are ignored.
 - 🔒 **Message contents & media** (`message.txt`, `cover.jpg`, `*.png`, `*.jpg`) are ignored.
